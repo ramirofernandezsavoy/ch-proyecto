@@ -5,9 +5,24 @@
 }
 
 body {
-  background-color: #343246;
+  background: linear-gradient(-45deg, #ac4b2e, #bb2c63, #1d82a7, #1a9b7d);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;  
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 /* GRID */
 .gridLayout {
   width: 100%;
@@ -226,6 +241,12 @@ textarea {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: 600;
+  transition: all 1s;
+}
+
+.gNav ul li a:hover {
+  font-size: 18px;
+  color: white;
 }
 
 .gNav img {
@@ -437,7 +458,7 @@ textarea {
       "section section"
       "aside aside"
       "footer footer";
-  }  
+  }
 }
 
 @media screen and (max-width: 480px) {
