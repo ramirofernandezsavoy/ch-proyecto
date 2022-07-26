@@ -7,19 +7,19 @@
 body {
   background: linear-gradient(-45deg, #ac4b2e, #bb2c63, #1d82a7, #1a9b7d);
   background-size: 400% 400%;
-  animation: gradient 20s ease infinite;  
+  animation: gradient 20s ease infinite;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
@@ -102,6 +102,7 @@ body {
   color: rgb(0, 0, 0);
   font-weight: 700;
   text-align: center;
+  text-decoration: none;
   padding: 5px;
   margin-top: 10px;
   background-color: #ffa683;
@@ -110,6 +111,12 @@ body {
   box-shadow: 10px 13px 16px -2px rgba(0, 0, 0, 0.88);
   -webkit-box-shadow: 10px 13px 16px -2px rgba(0, 0, 0, 0.88);
   -moz-box-shadow: 10px 13px 16px -2px rgba(0, 0, 0, 0.88);
+  transition: all 1s;
+}
+
+.gMainProductos div a:hover {
+  background-color: #000036;
+  color: #ffffff;
 }
 
 .gMainContacto {
@@ -206,6 +213,7 @@ textarea {
   color: #ffffff;
   padding: 10px;
   border-radius: 3px;
+  transition: all 1s;
 }
 
 .boton:hover {
@@ -221,7 +229,7 @@ textarea {
   grid-area: nav;
   display: flex;
   justify-content: space-between;
-  background-color: #9cd6f8;
+  background-color: #f1f1f15e;
   height: 50px;
   align-items: center;
   padding: 10px;
@@ -301,7 +309,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.719);
   padding: 30px;
   border-radius: 5px;
 }
@@ -329,7 +337,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(241, 177, 166);
+  background-color: rgba(240, 129, 109, 0.671);
   padding: 10px;
   border-radius: 5px;
 }
@@ -387,11 +395,19 @@ textarea {
   border-radius: 5px;
 }
 
+/* FOOTER */
+
 .gFooter {
   grid-area: footer;
   display: flex;
   justify-content: space-around;
-  background-color: #9cd6f8;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.45) 45%,
+    rgba(148, 187, 233, 0) 78%
+  );
+  /* background-color: #f1f1f15e; */
   padding: 10px;
   border-radius: 5px;
 }
